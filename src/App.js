@@ -17,7 +17,7 @@ const App = () => {
                 <div className="routes">
                     <Switch>
                         <Route exact path="/">
-                            <Homepage/>
+                            <Homepage />
                         </Route>
 
                         <Route exact path="/exchanges">
@@ -25,7 +25,7 @@ const App = () => {
                         </Route>
 
                         <Route exact path="/cryptocurrencies">
-                            <Cryptocurrencies/>
+                            <Cryptocurrencies myBool={false} />
                         </Route>
 
                         <Route exact path="/crypto/:coinId">
