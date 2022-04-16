@@ -26,7 +26,7 @@ const News = ({myBool}) => {
            className='select-news'
            placeholder="select a crypto"
            optionFilterProp='children'
-           onChange={(value)=>console.log(value)}
+           onChange={(value)=>setnewsCategory(value)}
            filterOption={(input,option)=>option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
          >
            <Option value="Cryptocurrency">Cryptocurrency</Option>
